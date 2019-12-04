@@ -1,8 +1,8 @@
 import React, {
-  useState, useRef, useEffect, useMemo,
+  useRef, useEffect,
 } from 'react';
 import {
-  TweenMax, TimelineMax, Power3, Elastic, Linear, Power1, Slow, Power4,
+  TimelineMax, Power3, Linear, Power1,
 } from 'gsap';
 
 import './style.scss';
