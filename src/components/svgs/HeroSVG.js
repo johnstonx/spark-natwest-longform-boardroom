@@ -2,7 +2,7 @@ import React, {
   useState, useRef, useEffect, useMemo,
 } from 'react';
 import {
-  TweenMax, TimelineMax, Power3, Elastic, Linear, Power1, Slow, Power4
+  TweenMax, TimelineMax, Power3, Elastic, Linear, Power1, Slow, Power4,
 } from 'gsap';
 
 import './style.scss';
@@ -45,15 +45,10 @@ export default function HeroSVG() {
     const boatTL = new TimelineMax({ repeat: -1, yoyo: true });
     boatTL
       .to(boat.current, 4, { ease: Linear.easeIn, y: 10 }, 0.4);
-    
-    const boatFloat = new TimelineMax({ repeat: -1, yoyo: true })
+
+    const boatFloat = new TimelineMax({ repeat: -1, yoyo: true });
     boatFloat
       .to(boat.current, 3, { ease: Power1.easeIn, rotation: 2, transformOrigin: 'center center' }, 0.2);
-      // .duration(4);
-
-    // const robotTL = new TimelineMax({ repeat: -1, yoyo: true });
-    // robotTL
-    //   .to(robot1, 3, { rotationY: 180 });
 
     const leavesTL = new TimelineMax({ repeat: -1, yoyo: true });
     leavesTL
